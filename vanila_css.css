@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@300&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300;400&family=League+Spartan&family=Lexend+Deca:wght@300;400&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Open+Sans&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200;300&family=Red+Hat+Display&family=Rubik:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@300&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300;400&family=League+Spartan&family=Lexend+Deca:wght@300;400&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Open+Sans&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200;300&family=Red+Hat+Display&family=Rubik:wght@300&display=swap");
+
+:root {
+  --Soft_red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark_desaturated_cyan_graphic_design_text: hsl(167, 40%, 24%);
+  --Dark_blue_photography_text: hsl(198, 62%, 26%);
+  --Dark_moderate_cyan_footer: hsl(168, 34%, 41%);
+  --Very_dark_desaturated_blue: hsl(212, 27%, 19%);
+  --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+  --Dark_grayish_blue: hsl(232, 10%, 55%);
+  --Grayish_blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 100%;
+}
+.first_page {
+  min-height: 100vh;
+  min-width: 100%;
+}
+.arrow {
+  transform: translateY(-45%);
+}
+.img_section {
+  background-size: 50rem;
+}
+.secong_page {
+  max-height: 50vh;
+}
+.learn {
+  position: relative;
+  cursor: pointer;
+}
+
+
+/* Pseudo_classes */
+
+.learn::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 8px;
+  background-color: var(--Yellow);
+  z-index: -1;
+  border-radius: 1rem;
+  transition: all .5s ease-in;
+}
+.learn:hover::before {
+  width: 108%;
+}
+.soft_red::before{
+  background-color: var(--Soft_red);
+
+}
+
+font-f {
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  background-image: url('images/desktop/image-gallery-sugarcubes.jpg')
+}
+
+/* font_familys */
+
+.heading {
+  font-family: "Fraunces", serif;
+}
+li {
+  font-family: "Barlow", sans-serif;
+}
+
+li:hover {
+  font-family: "Fraunces", serif;
+}
+.fourth_page_text{
+  font-family: "Fraunces", serif;
+
+}
+.user_name{
+  font-family: "Fraunces", serif;
+
+}
+
+/* Media queries */
+
+@media screen and (max-width: 639px) {
+  .nav_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 4%;
+    gap: 2rem;
+    background-color: var(--White);
+    color: var(--Very_dark_desaturated_blue);
+  }
+  li {
+    color: var(--Dark_grayish_blue);
+    margin-left: 0;
+  }
+  li:hover {
+    background-color: var(--Yellow);
+    color: var(--Very_dark_desaturated_blue);
+  }
+}

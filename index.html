@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vanila_css.css" />
+
+    <link rel="stylesheet" href="tailwind_ccs.css" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <title>Sunny Side</title>
+  </head>
+  <body>
+    <!-- main_container -->
+
+    <main class="container flex flex-col justify-center items-center">
+      <!-- first_page -->
+
+      <div class="first_page bg-header_img bg-center bg-cover text-center">
+        <!-- navigation_bar -->
+
+        <nav class="nav_bar flex justify-between items-center px-8">
+          <!-- logo -->
+
+          <div class="logo pt-2 cursor-pointer hover:scale-125">
+            <img src="images/logo.svg" alt="" class="w-32" />
+          </div>
+
+          <!-- Un-order_list -->
+
+          <ul class="nav_ul flex xs:p-6">
+            <li
+              class="nav_li px-5 py-2 md:ml-8 text-sm sm:text-white cursor-pointer transition-all duration-300 ease-in-out md:hover:bg-sky-300 hover:bg-yellow-400 rounded-full md:active:bg-white active:text-black sign font-medium"
+            >
+              About
+            </li>
+            <li
+              class="nav_li px-5 py-2 md:ml-8 text-sm sm:text-white cursor-pointer transition-all duration-300 ease-in-out md:hover:bg-sky-300 hover:bg-yellow-400 rounded-full md:active:bg-white active:text-black sign font-medium"
+            >
+              Services
+            </li>
+            <li
+              class="nav_li px-5 py-2 md:ml-8 text-sm sm:text-white cursor-pointer transition-all duration-300 ease-in-out md:hover:bg-sky-300 hover:bg-yellow-400 rounded-full md:active:bg-white active:text-black sign font-medium"
+            >
+              Projects
+            </li>
+            <li
+              class="nav_li px-5 py-2 md:ml-8 text-sm sm:text-white cursor-pointer transition-all duration-300 ease-in-out md:hover:bg-sky-300 hover:bg-yellow-400 rounded-full md:active:bg-white active:text-black sign font-medium"
+            >
+              Contact
+            </li>
+          </ul>
+          <!-- manue_img -->
+
+          <div class="manu" id="manu_bar" style="display: none">
+            <button type="button">
+              <img
+                src="images/icon-hamburger.svg"
+                alt=""
+                class="hover:h-5 hover:w-6"
+              />
+            </button>
+          </div>
+        </nav>
+        <!-- heading -->
+
+        <h1
+          class="heading text-white text-4xl uppercase self-center tracking-widest font-medium mt-20"
+        >
+          We are Creatives
+        </h1>
+
+        <!-- arrow_img -->
+
+        <div
+          class="arrow absolute md:top-1/2 md:left-1/2 xs:left-[47%] xs:top-[70%] w-6"
+        >
+          <img
+            src="images/icon-arrow-down.svg"
+            alt="arrow_img"
+            class="w-5 xs:w-12"
+          />
+        </div>
+      </div>
+
+      <!-- Secong page -->
+
+      <div class="secong_page grid_page max-h-screen grid grid-cols-2">
+        <!--1st grid_item -->
+
+        <div
+          class="grid_item text_section flex flex-col justify-center px-16 gap-6 text-left items-start"
+        >
+          <!-- heading -->
+
+          <h1 class="heading sm:text-2xl text-black sm:w-60">
+            Transform Your Brand
+          </h1>
+
+          <!-- description -->
+
+          <p class="description text-p_color font-semibold text-md">
+            We are full-service creative agency specializing in helping brands
+            grow fast.Engage your clients through compelling viscals that do
+            most of the marketing for you.
+          </p>
+
+          <!-- Learn -->
+
+          <strong class="learn font-bold text-md inline"> Learn More </strong>
+        </div>
+
+        <!--2nd grid_item -->
+
+        <div class="grid_item img_section w-full overflow-hidden">
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt=" "
+            class="w-full"
+          />
+        </div>
+      </div>
+
+      <!-- third page -->
+
+      <div class="third_page grid_page max-h-screen grid grid-cols-2">
+        <!--1st grid_item -->
+
+        <div class="grid_item img_section w-full overflow-hidden">
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt=" "
+            class="w-full"
+          />
+        </div>
+
+        <!--2st grid_item -->
+
+        <div
+          class="grid_item text_section flex flex-col justify-center px-16 gap-6 text-left items-start"
+        >
+          <!-- heading -->
+
+          <h1 class="heading sm:text-2xl text-black sm:w-60">
+            Stand out to the right audience
+          </h1>
+
+          <!-- description -->
+
+          <p class="description text-p_color font-semibold text-md">
+            Using a collaborative formula of
+            designers,researchers,photograpers,videographers and
+            copywriters,we'll build and extend your brand in digital places.
+          </p>
+
+          <!-- Learn -->
+
+          <strong class="learn soft_red font-bold text-md inline">
+            Learn More
+          </strong>
+        </div>
+      </div>
+
+      <!-- 4th_page -->
+
+      <div class="fourth_page grid_page grid grid-cols-2 min-h-[80vh] w-full">
+        <!-- Berry -->
+
+        <div
+          class="grid_item bg-Berry_img bg-center bg-cover bg-no-repeat flex flex-col justify-end items-center gap-6 text-center"
+        >
+          <!-- heading -->
+
+          <h1 class="fourth_page_text text-grapgics_photography text-3xl">
+            Graphic Design
+          </h1>
+
+          <!-- description -->
+
+          <p
+            class="description text-grapgics_photography font-semibold text-md w-[23rem] mb-12"
+          >
+            Great design makes you memorable.We deliver artwork that unserscores
+            your brand message and captures potential cliendt's attention.
+          </p>
+        </div>
+
+        <!-- Orange -->
+
+        <div
+          class="grid_item bg-Orange_img bg-center bg-cover bg-no-repeat flex flex-col justify-end items-center gap-6 text-center"
+        >
+          <!-- heading -->
+
+          <h1 class="fourth_page_text text-grapgics_photography text-3xl">
+            Photography
+          </h1>
+
+          <!-- description -->
+
+          <p
+            class="description text-grapgics_photography font-semibold text-md w-[23rem] mb-12"
+          >
+            Increase your credibility by getting the most stunning,high-quality
+            photos that improve your business immage.
+          </p>
+        </div>
+      </div>
+
+      <!-- fifth_page -->
+
+      <div
+        class="fifth_page min-h-[70vh] flex flex-col justify-center items-center text-center overflow-hidden gap-12 my-8"
+      >
+        <!-- heading -->
+
+        <h1
+          class="heading text-[1.25rem] uppercase tracking-widest text-p_color"
+        >
+          Client testimonials
+        </h1>
+
+        <div class="user_section grid grid-cols-3">
+          <!-- 1st_user_block -->
+
+          <div
+            class="grid_item user_data flex flex-col items-center gap-4 px-16"
+          >
+            <!-- user_img -->
+
+            <div class="user_img w-14 rounded-full overflow-hidden">
+              <img src="images/image-emily.jpg" alt="" class="w-full" />
+            </div>
+
+            <p class="description text-sm text-Very_dark_grayish_blue">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+
+            <!-- user_name -->
+
+            <div class="user_info">
+              <strong
+                class="user_name block text-base text-Very_dark_grayish_blue"
+              >
+                Emily R.
+              </strong>
+
+              <!-- client_passion -->
+
+              <small class="client_passion text-p_color text-xs">
+                Marketing Director
+              </small>
+            </div>
+          </div>
+
+          <!-- 2nd_user_block -->
+
+          <div
+            class="grid_item user_data flex flex-col items-center gap-4 px-16"
+          >
+            <!-- user_img -->
+
+            <div class="user_img w-14 rounded-full overflow-hidden">
+              <img src="images/image-thomas.jpg" alt="" />
+            </div>
+
+            <p class="description text-sm text-Very_dark_grayish_blue">
+              Sunnyside's enthusiasm coupled with their keen interest in our
+              brand's success made it a satisfying and enjoyable experience.
+            </p>
+
+            <!-- user_name -->
+
+            <strong
+              class="user_name block text-base text-Very_dark_grayish_blue"
+            >
+              Thomas S.
+            </strong>
+
+            <!-- client_passion -->
+
+            <small class="client_passion text-p_color text-xs">
+              Chief Operating Officer
+            </small>
+          </div>
+
+          <!-- 3rd_user_block -->
+
+          <div
+            class="grid_item user_data flex flex-col items-center gap-4 px-16"
+          >
+            <!-- user_img -->
+
+            <div class="user_img w-14 rounded-full overflow-hidden">
+              <img src="images/image-jennie.jpg" alt="" />
+            </div>
+
+            <p class="description text-sm text-Very_dark_grayish_blue">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+
+            <!-- user_name -->
+
+            <strong
+              class="user_name block text-base text-Very_dark_grayish_blue"
+            >
+              Jennie F.
+            </strong>
+
+            <!-- client_passion -->
+
+            <small class="client_passion text-p_color text-xs">
+              Business Owner
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- sixth_page -->
+
+      <div class="sixth_page min-h-[60vh] grid grid-cols-4 w-full">
+        <!-- bottles_img -->
+
+        <div
+          class="bottles bg-[url('images/desktop/image-gallery-milkbottles.jpg')] bg-right bg-cover"
+        ></div>
+
+        <!-- half_orange_img -->
+
+        <div
+          class="half_orange bg-[url('images/desktop/image-gallery-orange.jpg')] bg-center bg-cover"
+        ></div>
+
+        <!-- cone_img -->
+
+        <div
+          class="cone_img half_orange bg-[url('images/desktop/image-gallery-cone.jpg')] bg-bottom bg-cover"
+        ></div>
+
+        <!-- sugar_boxes -->
+
+        <div
+          class="sugar_boxes half_orange bg-[url('images/desktop/image-gallery-sugarcubes.jpg')] bg-left-top bg-cover"
+        ></div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="min-h-[40vh] bg-cyan-300 text-Dark_moderate_cyan_footer w-full flex flex-col justify-center items-center gap-8">
+        <!-- logo -->
+
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+
+        <!-- Ul's -->
+        <ul class="flex ">
+          <li class="ml-12 cursor-pointer">About</li>
+          <li class="ml-12 cursor-pointer">Services</li>
+          <li class="ml-12 cursor-pointer">Projects</li>
+        </ul>
+
+        <!-- social_links -->
+
+        <div class="social_links flex pt-6">
+          <a class="cursor-pointer ml-5" href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+          <a class="cursor-pointer ml-5" href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+          <a class="cursor-pointer ml-5" href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+          <a class="cursor-pointer ml-5" href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
